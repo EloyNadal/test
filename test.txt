@@ -41,4 +41,6 @@ second  https://github.com/EloyNadal/test_remote.git (fetch)
 second  https://github.com/EloyNadal/test_remote.git (push)
 
 cambio en la rama develop
+git commit -m "first commit in develop branch"
+git push all develop
 
