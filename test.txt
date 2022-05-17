@@ -1,2 +1,3 @@
 test
 change file and push only in second remote repository
+and now only push to first remote repository
