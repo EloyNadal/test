@@ -1,5 +1,42 @@
 test
+# git branch -M main
+# git remote add origin https://github.com/EloyNadal/test.git
+# git push -u origin main
+
 change file and push only in second remote repository
+# git remote add second https://github.com/EloyNadal/test_remote.git
+# git push -u second main
+# git add .
+# git commit -m "commit for second remote"
+# git push second main
+
 and now only push to first remote repository
+
+# git add .
+# git commit -m "commit for second remote"
+# git push origin main
+
 and commit to all repos
-second intent
+
+# git remote add all https://github.com/EloyNadal/test.git
+# git remote set-url --add --push all https://github.com/EloyNadal/test.git
+# git remote set-url --add --push all https://github.com/EloyNadal/test_remote.git
+
+# git add .
+# git commit -m "commit to all repos"
+# git push all main (main puede ser cualquier rama)
+
+git push [nombre de comando] [nombre de rama]
+ok. podemos crear un comando, añadir todos los proyectos que utilizan el mismo codigo (core) y realizar push en todos a la vez segun entorno.
+(git push prepod develop)
+(git push prod main)
+
+git remote -v
+all     https://github.com/EloyNadal/test.git (fetch)
+all     https://github.com/EloyNadal/test_remote.git (push)
+all     https://github.com/EloyNadal/test.git (push)
+origin  https://github.com/EloyNadal/test.git (fetch)
+origin  https://github.com/EloyNadal/test.git (push)
+second  https://github.com/EloyNadal/test_remote.git (fetch)
+second  https://github.com/EloyNadal/test_remote.git (push)
+
